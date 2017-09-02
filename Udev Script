@@ -1,0 +1,3 @@
+// Place file in /etc/udev/rules.d/"myrule.rules"
+
+ACTION=="add", SUBSYSTEM=="usb", SYSFS{idVendor}=="0bc2", SYSFS{idProduct}=="2100", RUN+="/home/pimover.sh"
